@@ -1,0 +1,238 @@
+/* ESTILOS GENERALES */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: turquoise;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    padding: 20px 0 0 0;
+}
+
+.data-fiscal {
+    height: 50px;
+    padding-left: 20px;
+}
+
+.social-bar {
+    padding-right: 20px;
+}
+
+/* BARRA DE NAVEGACION */
+nav {
+    z-index: 9999;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bar-btn img {
+    width: 32px;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: orangered;
+    opacity: 95%;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: white;
+    transition: .2s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.nav-menu {
+    height: 100vh;
+}
+
+#check:checked~.nav-menu li {
+    display: block;
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: orangered;
+        transition: .2s;
+    }
+}
+
+
+/* SECCION NOVEDADES */
+
+.novedades {
+    height: 50vh;
+    width: 100%;
+    background-image: url(../images/rojo1000x800.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .novedades {
+        height: 70vh;
+        background-image: url(../images/rojo1600x800.png);
+    }
+}
+
+/* PRODUCTOS DESTACADOS */
+.productosDestacados {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+}
+
+.productosCard {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+    text-align: center;
+    border: solid 4px rgb(230, 230, 230);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.cardTransicion {
+    transition: all 0.4s;
+}
+
+.cardTransicion:hover {
+    border: orangered solid 4px;
+}
+
+.imgCard {
+    margin: 20px;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .productosCard {
+        display: flex;
+        flex-flow: row;
+        margin: 20px 0;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+}
