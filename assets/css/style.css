@@ -14,36 +14,15 @@ body {
 header {
     width: 100%;
     height: 100px;
-    background-color: turquoise;
 }
 
-h2 {
+h2 {    
     margin: 20px 0;
     text-align: center;
     font-weight: 800;
 }
 
-.pie {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    text-align: center;
-    font-size: 14px;
-    background-color: black;
-    color: white;
-    padding: 20px 0 0 0;
-}
-
-.data-fiscal {
-    height: 50px;
-    padding-left: 20px;
-}
-
-.social-bar {
-    padding-right: 20px;
-}
-
+/***********************************************************************************************/
 /* BARRA DE NAVEGACION */
 nav {
     z-index: 9999;
@@ -82,6 +61,10 @@ nav {
     transition: all .5s;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .nav-menu li {
     display: none;
     line-height: 30px;
@@ -93,6 +76,7 @@ nav {
     color: black;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 600;
 }
 
@@ -159,7 +143,60 @@ nav {
     }
 }
 
+/***********************************************************************************************/
+/* PIE DE PAGINA */
 
+.pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.data-fiscal {
+    height: 50px;
+    margin: 10px 0;
+}
+
+.pie-text {
+    margin: 10px 0;
+}
+
+.img-redes {
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .pie {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0;
+    }
+
+    .data-fiscal {
+        padding-left: 20px;
+    }
+
+    .social-bar {
+        padding-right: 20px;
+    }
+
+    .img-redes {
+        margin-top: 0px;
+    
+    }
+}
+
+/***********************************************************************************************/
 /* SECCION NOVEDADES */
 
 .novedades {
@@ -179,6 +216,7 @@ nav {
     }
 }
 
+/***********************************************************************************************/
 /* PRODUCTOS DESTACADOS */
 .productosDestacados {
     position: relative;
@@ -220,6 +258,20 @@ nav {
 
 .imgCard {
     margin: 20px;
+}
+
+/* TABLET */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .productosCard {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 20px 0;
+    }
+
+    .card {
+        width: 400px;
+    }
 }
 
 /* DESKTOP */
