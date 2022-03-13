@@ -16,7 +16,7 @@ header {
     height: 100px;
 }
 
-h2 {    
+h2 {
     margin: 20px 0;
     text-align: center;
     font-weight: 800;
@@ -192,7 +192,7 @@ ul {
 
     .img-redes {
         margin-top: 0px;
-    
+
     }
 }
 
@@ -287,4 +287,104 @@ ul {
         width: 400px;
     }
 
+}
+
+/***********************************************************************************************/
+/* SECCION QUIENES SOMOS */
+
+.quienesSomos {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    flex-direction: column;
+}
+
+.quienesSomos h1,
+.quienesSomos p {
+    text-align: center;
+    color: orangered;
+    margin: 20px;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    color: orangered;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mapa p {
+    color: orangered;
+}
+
+.mapa div {
+    padding: 30px;
+}
+
+.mapaIframe {
+    width: 90vw;
+    height: 50vh;
+}
+
+
+/* TABLET */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .quienesSomos {
+        min-height: 20vh;
+    }
+
+    .ubicacion {
+        height: 100%;
+        min-height: 80vh;
+    }
+
+    .mapa div {
+        padding: 10px;
+    }
+
+    .mapaIframe {
+        width: 80vw;
+        height: 450px;
+    }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .quienesSomos {
+        min-height: 40vh;
+    }
+
+    .ubicacion {
+        height: 100%;
+        min-height: 60vh;
+        padding-bottom: 80px;
+    }
+
+    .mapa {
+        flex-direction: row;
+        margin: 20px;
+        text-align: left;
+    }
+
+    .mapaIframe {
+        width: 50vw;
+        height: 450px;
+    }
 }
