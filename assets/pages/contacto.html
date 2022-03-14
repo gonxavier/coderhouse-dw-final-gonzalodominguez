@@ -41,21 +41,64 @@
     </header>
 
     <main>
+    <!-- Formulario de Contacto -->
 
+    <section class="contacto">
+        <h1>Contacto</h1>
+        <form action="" class="formulario">
+            <div class="formCampos">
+                <div class="formDatos">
+                    <label for="">Nombre Completo: </label>
+                    <div class="formNombre">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                    </div>
+                    <label for="">Email: </label>
+                    <input class="inputWide" type="email" placeholder="Correo Electrónico">
+                    <label for="">WhatsApp: </label>
+                    <input class="inputWide" type="text" placeholder="Ej: 11 9999-9999">
+                </div>
+                <div class="formConsulta">
+                    <label for="">Su consulta: </label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese aquí su consulta..."></textarea>
+                </div>
+            </div>
+
+            <div class="formPreferencias">
+                <h4>Horario de contacto:</h4>
+                <div class="formOpciones">
+                    <select name="horario">
+                        <option value="mañaña">8 a 12 hs</option>
+                        <option value="mediatarde">12 a 16 hs</option>
+                        <option value="tarde">16 a 20 hs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="checkbox">
+                <span>Quiero suscribirme al newsletter. </span>
+                <input class="checkbox" type="checkbox" name="acepta" value="1">
+            </div>
+            <div class="formBotones">
+                <input type="reset" value="LIMPIAR FORMULARIO">
+                <input type="submit" value="ENVIAR">
+                <br>
+            </div>
+            
+        </form>
+    </section>
 
     </main>
 
     <footer class="pie">
-        <div><img class="data-fiscal" src="assets/images/df-falso.jpg" alt=""></div>
+        <div><img class="data-fiscal" src="../images/df-falso.jpg" alt=""></div>
         <div>Copyright &copy; 2022 - RECREATIV Tu tienda favorita <br> Desarrollado por Gonzalo Domínguez</div>
         <div class="social-bar">
-            <img src="assets/images/social-fb.png" alt="">
-            <img src="assets/images/social-ig.png" alt="">
-            <img src="assets/images/social-in.png" alt="">
-            <img src="assets/images/social-tw.png" alt="">
+            <img class="img-redes" src="../images/social-fb.png" alt="">
+            <img class="img-redes" src="../images/social-ig.png" alt="">
+            <img class="img-redes" src="../images/social-in.png" alt="">
+            <img class="img-redes" src="../images/social-tw.png" alt="">
         </div>
     </footer>
-
 
     <!-- Javascript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

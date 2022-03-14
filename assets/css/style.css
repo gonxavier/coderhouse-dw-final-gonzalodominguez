@@ -22,6 +22,24 @@ h2 {
     font-weight: 800;
 }
 
+/* ANIMACION */
+
+.imagen-animada {
+    animation-name: imgNovedades;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes imgNovedades {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /***********************************************************************************************/
 /* BARRA DE NAVEGACION */
 nav {
@@ -387,4 +405,206 @@ ul {
         width: 50vw;
         height: 450px;
     }
+}
+
+/***********************************************************************************************/
+/* FORMULARIO DE CONTACTO */
+
+.contacto {
+    height: 100%;
+    padding: 40px 0;
+    flex-direction: column;
+}
+
+.contacto h1 {
+    text-align: center;
+    color: orangered;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 0 10px;
+    padding: 0 1vw;
+    justify-content: center;
+}
+
+.formulario p,
+.formulario h4,
+.formulario span {
+    text-align: center;
+    color: orangered;
+}
+
+.inputWide {
+    width: 100%;
+    height: 40px;
+    color: black;
+    background-color: rgb(255, 230, 100);
+    border: 2px solid orangered;
+}
+
+div label {
+    color: black;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.formCampos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formDatos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.formConsulta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.formConsulta textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 230, 100);
+    border: 2px solid orangered;
+    color: black;
+}
+
+.formPreferencias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPreferencias select {
+    width: 80%;
+}
+
+.formOpciones {
+    width: 300px;
+    display: flex;
+    padding: 10px 0;
+    margin: 20px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBotones {
+    display: flex;
+    flex-direction: row nowrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.formBotones input {
+    margin: 0 10px;
+    background-color: #ff6741;
+    border: #ff3300 3px solid;
+    font-weight: 800;
+    color: white;
+    height: 40px;
+}
+
+.formNombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formNombre input {
+    width: 49%;
+    height: 40px;
+    background-color: rgb(255, 230, 100);
+    border: 2px solid orangered;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .contacto {
+        height: 80vh;
+        padding-top: 60px;
+    }
+
+    .formulario {
+        margin: 20px 50px 0 50px;
+        padding: 0 10vw;
+    }
+
+
+    .formCampos {
+        flex-direction: row;
+        height: 300px;
+    }
+
+    .formDatos {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .formConsulta {
+        width: 50%;
+        height: 100%;
+        margin: 0 5px;
+        padding-top: 0;
+    }
+
+    .formPreferencias {
+        flex-direction: row;
+    }
+
+}
+
+/***********************************************************************************************/
+/* PREGUNTAS FRECUENTES */
+/* (MAYORMENTE BOOTSTRAP) */
+
+.faq {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.faq h1 {
+    text-align: center;
+    color: orangered;
+    margin: 20px;
+}
+
+.preguntas {
+    background-color: rgb(255, 230, 100);
+    color: black;
+}
+
+.preguntas h2 button {
+    font-weight: 600;
+    color: orangered;
+    background-color: rgb(255, 230, 100)
+}
+
+.preguntas h2 button:hover {
+    color: white;
+    background-color: orangered
 }
