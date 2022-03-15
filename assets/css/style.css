@@ -297,7 +297,7 @@ ul {
 @media screen and (min-width: 1024px) {
     .productosCard {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         margin: 20px 0;
     }
 
@@ -541,6 +541,15 @@ div label {
     margin: 10px 0;
 }
 
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .formPreferencias {
+        flex-direction: row;
+    }
+}
+
+
 /* DESKTOP */
 
 @media screen and (min-width: 1024px) {
@@ -575,16 +584,56 @@ div label {
     .formPreferencias {
         flex-direction: row;
     }
-
 }
+
+
+/***********************************************************************************************/
+/* SECCION PRODUCTOS */
+/* (Reutiliza clases de página de inicio) */
+
+.prod-compra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-compra {
+    border: 3px solid rgb(255, 130, 80);
+    padding: 10px 15px;
+    background-color: orangered;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn-compra:hover {
+    background-color: rgb(220, 45, 0);
+    color: #ffffff;
+}
+
+.precio {
+    padding: 15px 15px 0 15px;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+    color: orangered;
+}
+
+
 
 /***********************************************************************************************/
 /* PREGUNTAS FRECUENTES */
 /* (MAYORMENTE BOOTSTRAP) */
 
 .faq {
-    height: 100vh;
-    min-height: 600px;
+    height: 100%;
+    min-height: 80vh;
+    padding-bottom: 100px;
+    padding: 20px 0;
 }
 
 .faq h1 {
@@ -598,13 +647,42 @@ div label {
     color: black;
 }
 
-.preguntas h2 button {
+.accordion {
+    margin-bottom: 30px;
+}
+
+.accordion-button {
     font-weight: 600;
     color: orangered;
     background-color: rgb(255, 230, 100)
 }
 
-.preguntas h2 button:hover {
+.accordion-button:hover {
     color: white;
     background-color: orangered
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: orangered;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-extra {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.faq-extra p {
+    padding: 0 10px;
+}
+
+.faq-extra p a {
+    color: orangered;
 }
