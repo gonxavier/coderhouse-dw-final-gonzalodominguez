@@ -319,10 +319,17 @@ ul {
     flex-direction: column;
 }
 
-.quienesSomos h1,
-.quienesSomos p {
+.quienesSomos h1 {
     text-align: center;
     color: orangered;
+    margin: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.quienesSomos p {
+    text-align: center;
+    color: black;
     margin: 20px;
 }
 
@@ -335,6 +342,7 @@ ul {
 
 .ubicacion h2 {
     color: orangered;
+    font-weight: 500;
 }
 
 .mapa {
@@ -346,12 +354,13 @@ ul {
 }
 
 .mapa p {
-    color: orangered;
+    color: black;
 }
 
 .mapa div {
     padding: 30px;
 }
+
 
 .mapaIframe {
     width: 90vw;
@@ -439,6 +448,7 @@ ul {
 .inputWide {
     width: 100%;
     height: 40px;
+    padding: 0 10px;
     color: black;
     background-color: rgb(255, 230, 100);
     border: 2px solid orangered;
@@ -460,7 +470,6 @@ div label {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0 5px;
     text-align: center;
 }
 
@@ -476,6 +485,7 @@ div label {
 .formConsulta textarea {
     width: 100%;
     height: 100%;
+    padding: 10px;
     background-color: rgb(255, 230, 100);
     border: 2px solid orangered;
     color: black;
@@ -522,15 +532,16 @@ div label {
 
 .formNombre {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .formNombre input {
-    width: 49%;
     height: 40px;
+    margin-bottom: 10px;
     background-color: rgb(255, 230, 100);
     border: 2px solid orangered;
+    padding: 0 10px;
 }
 
 .checkbox {
@@ -544,6 +555,16 @@ div label {
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
+    .formNombre {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formNombre input {
+        width: 49%;
+        margin-bottom: 0;
+    }
+
     .formPreferencias {
         flex-direction: row;
     }
@@ -563,6 +584,15 @@ div label {
         padding: 0 10vw;
     }
 
+    .formNombre {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formNombre input {
+        width: 49%;
+        margin-bottom: 0;
+    }
 
     .formCampos {
         flex-direction: row;
@@ -571,6 +601,7 @@ div label {
 
     .formDatos {
         width: 50%;
+        margin: 0 5px;
         justify-content: space-between;
     }
 
@@ -673,7 +704,7 @@ div label {
 }
 
 .faq-extra {
-    padding-top: 40px;
+    padding: 40px 0 20px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
