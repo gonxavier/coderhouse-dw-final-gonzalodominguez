@@ -38,6 +38,7 @@ h2 {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -239,14 +240,14 @@ ul {
 
 /***********************************************************************************************/
 /* PRODUCTOS DESTACADOS */
-.productosDestacados {
+.productos-destacados {
     position: relative;
     width: 100%;
     height: 100%;
     margin: 50px 0;
 }
 
-.productosCard {
+.productos-card {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -269,22 +270,22 @@ ul {
     margin: 20px 10px;
 }
 
-.cardTransicion {
+.card-transicion {
     transition: all 0.4s;
 }
 
-.cardTransicion:hover {
+.card-transicion:hover {
     border: orangered solid 4px;
 }
 
-.imgCard {
+.img-card {
     margin: 20px;
 }
 
 /* TABLET */
 
 @media (min-width: 481px) and (max-width: 1023px) {
-    .productosCard {
+    .productos-card {
         display: flex;
         flex-flow: row wrap;
         margin: 20px 0;
@@ -298,7 +299,7 @@ ul {
 /* DESKTOP */
 
 @media screen and (min-width: 1024px) {
-    .productosCard {
+    .productos-card {
         display: flex;
         flex-flow: row wrap;
         margin: 20px 0;
@@ -307,13 +308,12 @@ ul {
     .card {
         width: 400px;
     }
-
 }
 
 /***********************************************************************************************/
 /* SECCION QUIENES SOMOS */
 
-.quienesSomos {
+.quienes-somos {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -322,7 +322,7 @@ ul {
     flex-direction: column;
 }
 
-.quienesSomos h1 {
+.quienes-somos h1 {
     text-align: center;
     color: orangered;
     margin: 20px;
@@ -330,7 +330,7 @@ ul {
     text-transform: uppercase;
 }
 
-.quienesSomos p {
+.quienes-somos p {
     text-align: center;
     color: black;
     margin: 20px;
@@ -365,7 +365,7 @@ ul {
 }
 
 
-.mapaIframe {
+.mapa-iframe {
     width: 90vw;
     height: 50vh;
 }
@@ -374,7 +374,7 @@ ul {
 /* TABLET */
 
 @media (min-width: 481px) and (max-width: 1023px) {
-    .quienesSomos {
+    .quienes-somos {
         min-height: 20vh;
     }
 
@@ -387,7 +387,7 @@ ul {
         padding: 10px;
     }
 
-    .mapaIframe {
+    .mapa-iframe {
         width: 80vw;
         height: 450px;
     }
@@ -397,7 +397,7 @@ ul {
 /* DESKTOP */
 
 @media screen and (min-width: 1024px) {
-    .quienesSomos {
+    .quienes-somos {
         min-height: 40vh;
     }
 
@@ -413,7 +413,7 @@ ul {
         text-align: left;
     }
 
-    .mapaIframe {
+    .mapa-iframe {
         width: 50vw;
         height: 450px;
     }
@@ -448,7 +448,7 @@ ul {
     color: orangered;
 }
 
-.inputWide {
+.input-wide {
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -463,20 +463,20 @@ div label {
     font-weight: 600;
 }
 
-.formCampos {
+.form-campos {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.formDatos {
+.form-datos {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
 }
 
-.formConsulta {
+.form-consulta {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -485,7 +485,7 @@ div label {
     text-align: center;
 }
 
-.formConsulta textarea {
+.form-consulta textarea {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -494,7 +494,7 @@ div label {
     color: black;
 }
 
-.formPreferencias {
+.form-preferencias {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -504,11 +504,11 @@ div label {
     align-items: center;
 }
 
-.formPreferencias select {
+.form-preferencias select {
     width: 80%;
 }
 
-.formOpciones {
+.form-opciones {
     width: 300px;
     display: flex;
     padding: 10px 0;
@@ -517,14 +517,14 @@ div label {
     align-items: center;
 }
 
-.formBotones {
+.form-botones {
     display: flex;
     flex-direction: row nowrap;
     padding: 10px;
     justify-content: center;
 }
 
-.formBotones input {
+.form-botones input {
     margin: 0 10px;
     background-color: #ff6741;
     border: #ff3300 3px solid;
@@ -533,13 +533,13 @@ div label {
     height: 40px;
 }
 
-.formNombre {
+.form-nombre {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.formNombre input {
+.form-nombre input {
     height: 40px;
     margin-bottom: 10px;
     background-color: rgb(255, 230, 100);
@@ -558,17 +558,17 @@ div label {
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
-    .formNombre {
+    .form-nombre {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .formNombre input {
+    .form-nombre input {
         width: 49%;
         margin-bottom: 0;
     }
 
-    .formPreferencias {
+    .form-preferencias {
         flex-direction: row;
     }
 }
@@ -578,7 +578,8 @@ div label {
 
 @media screen and (min-width: 1024px) {
     .contacto {
-        height: 80vh;
+        height: 100%;
+        min-height: 80vh;
         padding-top: 60px;
     }
 
@@ -587,35 +588,35 @@ div label {
         padding: 0 10vw;
     }
 
-    .formNombre {
+    .form-nombre {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .formNombre input {
+    .form-nombre input {
         width: 49%;
         margin-bottom: 0;
     }
 
-    .formCampos {
+    .form-campos {
         flex-direction: row;
         height: 300px;
     }
 
-    .formDatos {
+    .form-datos {
         width: 50%;
         margin: 0 5px;
         justify-content: space-between;
     }
 
-    .formConsulta {
+    .form-consulta {
         width: 50%;
         height: 100%;
         margin: 0 5px;
         padding-top: 0;
     }
 
-    .formPreferencias {
+    .form-preferencias {
         flex-direction: row;
     }
 }
@@ -684,6 +685,13 @@ div label {
 .accordion {
     margin-bottom: 30px;
 }
+
+.accordion-body a,
+.accordion-body a:visited {
+    color: black;
+    font-weight: 500;
+}
+
 
 .accordion-button {
     font-weight: 600;
